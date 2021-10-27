@@ -48,7 +48,13 @@ public class DuAtleta implements Ciclismo, Corredor {
 
     @Override
     public void carrera() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (edad <= 19 && edad > 13) {
+            System.out.println("5 KM de Carrera");
+        } else if (edad > 19 && edad < 40) {
+            System.out.println("20 KM de Carrera");
+        } else {
+            System.out.println("10 KM de Carrera");
+        }
     }
 
     @Override

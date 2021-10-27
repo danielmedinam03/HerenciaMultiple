@@ -39,27 +39,54 @@ public class TriAtleta implements Ciclismo,Corredor,Natacion{
 
     @Override
     public void tipoCiclismo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (!"INNEOS".equals(equipo) && !"Claro".equals(equipo)) {
+            System.out.println("Ciclismo de Montaña");
+        } else {
+            System.out.println("Ciclismo de Carretera");
+        }
     }
 
     @Override
     public void recorrido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (edad <= 19 && edad >13){
+            System.out.println("20 KM de Recorrido");
+        }else if(edad >19 && edad < 40){
+            System.out.println("60 KM de Recorrido");
+        }else{
+            System.out.println("40 KM de Recorrido");
+        }
     }
 
     @Override
     public void carrera() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (edad <= 19 && edad > 13) {
+            System.out.println("5 KM de Carrera");
+        } else if (edad > 19 && edad < 40) {
+            System.out.println("20 KM de Carrera");
+        } else {
+            System.out.println("10 KM de Carrera");
+        }
     }
 
     @Override
     public void estilosNatacion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if ("Movistar".equals(equipo)){
+            System.out.println("Brazada");
+        }else{
+            System.out.println("Crol, Brazada, Espalda y Mariposa");
+        }
+        
     }
 
     @Override
     public void distancia() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (edad <= 19 && edad >13){
+            System.out.println("750 m de Recorrido");
+        }else if(edad >19 && edad < 40){
+            System.out.println("1500 m de Recorrido");
+        }else{
+            System.out.println("900 m de Recorrido");
+        }
     }
 
     @Override

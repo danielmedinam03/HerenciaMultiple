@@ -28,9 +28,9 @@ public class DuAtleta implements Ciclismo, Corredor {
     public void tipoCiclismo() {
 
         if (!"Movistar".equals(equipo) && !"Claro".equals(equipo)){
-            System.out.println("Ciclismo de Montaña");
+            System.out.println("Tipo Ciclismo : Ciclismo de Montaña");
         }else{
-            System.out.println("Ciclismo de Carretera");
+            System.out.println("Tipo Ciclismo : Ciclismo de Carretera");
         }
         
     }
@@ -38,22 +38,22 @@ public class DuAtleta implements Ciclismo, Corredor {
     @Override
     public void recorrido() {
         if (edad <= 19 && edad >13){
-            System.out.println("20 KM de Recorrido");
+            System.out.println("- 20 KM de Recorrido");
         }else if(edad >19 && edad < 40){
-            System.out.println("60 KM de Recorrido");
+            System.out.println("- 60 KM de Recorrido");
         }else{
-            System.out.println("40 KM de Recorrido");
+            System.out.println("- 40 KM de Recorrido");
         }
     }
 
     @Override
     public void carrera() {
         if (edad <= 19 && edad > 13) {
-            System.out.println("5 KM de Carrera");
+            System.out.println("Carrera: 5 KM de Carrera");
         } else if (edad > 19 && edad < 40) {
-            System.out.println("20 KM de Carrera");
+            System.out.println("Carrera: 20 KM de Carrera");
         } else {
-            System.out.println("10 KM de Carrera");
+            System.out.println("Carrera: 10 KM de Carrera");
         }
     }
 

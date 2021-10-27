@@ -60,6 +60,5 @@ public class DuAtleta implements Ciclismo, Corredor {
     @Override
     public String toString() {
         return "DuAtleta{" + "nombre=" + nombre + ", edad=" + edad + ", equipo=" + equipo + '}';
-    }
-    
+    }   
 }

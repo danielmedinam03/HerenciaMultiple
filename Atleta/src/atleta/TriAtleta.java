@@ -92,8 +92,6 @@ public class TriAtleta implements Ciclismo,Corredor,Natacion{
     @Override
     public String toString() {
         return "TriAtleta{" + "nombre=" + nombre + ", edad=" + edad + ", equipo=" + equipo + ", competenciaFavorita=" + competenciaFavorita + '}';
-    }
-    
-    
+    } 
     
 }
